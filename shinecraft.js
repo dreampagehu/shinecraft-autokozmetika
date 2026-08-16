@@ -28,3 +28,4 @@ document.querySelectorAll('.service-grid article,.price-grid article').forEach(c
 document.querySelector('.book form').addEventListener('submit',e=>{e.preventDefault();const toast=document.querySelector('.toast');toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),3000);e.target.reset()});
 document.querySelector('.menu').addEventListener('click',()=>header.classList.toggle('menu-open'));
 document.querySelectorAll('header nav a').forEach(a=>a.addEventListener('click',()=>header.classList.remove('menu-open')));
+[['.why .eyebrow','06 / Miért Shinecraft?'],['#reviews .eyebrow','07 / Demo értékelések'],['.pricing .eyebrow','08 / Csomagok'],['#faq .eyebrow','09 / Gyakori kérdések'],['#book .eyebrow','10 / Kapcsolat']].forEach(([selector,label])=>document.querySelector(selector).textContent=label);
